@@ -3,6 +3,8 @@ import { Hero } from "@/components/Hero";
 import { FitmentStrip } from "@/components/FitmentStrip";
 import { ProofStrip } from "@/components/ProofStrip";
 import { Services } from "@/components/Services";
+import { Gallery } from "@/components/Gallery";
+import { FeaturedReels } from "@/components/FeaturedReels";
 import { Builds } from "@/components/Builds";
 import { About } from "@/components/About";
 import { Partners } from "@/components/Partners";
@@ -18,6 +20,8 @@ export default function HomePage() {
         <FitmentStrip />
         <ProofStrip />
         <Services />
+        <Gallery />
+        <FeaturedReels />
         <Builds />
         <About />
         <Partners />
