@@ -15,13 +15,12 @@ export function Contact() {
     const vehicle = String(data.get("vehicle") || "").trim();
     const message = String(data.get("message") || "").trim();
 
-    const subject = encodeURIComponent(`Tune enquiry — ${vehicle || "vehicle"} — ${name}`);
-    const body = encodeURIComponent(
+    const text = encodeURIComponent(
       `Name: ${name}\nPhone: ${phone}\nVehicle: ${vehicle}\n\n${message}\n\n— Sent from Otto Tuned site`
     );
 
-    // MVP: open mailto; also confirm in-UI
-    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+    // Open a prefilled WhatsApp conversation and confirm in-UI.
+    window.location.href = `https://wa.me/254782217212?text=${text}`;
     setStatus("sent");
     form.reset();
   }
@@ -173,7 +172,7 @@ export function Contact() {
 
               {status === "sent" && (
                 <p className="text-center text-sm text-neutral-400" role="status">
-                  Opening your mail client… Prefer chat?{" "}
+                  Opening WhatsApp… Prefer chat?{" "}
                   <a href={BRAND.whatsapp} className="text-crimson underline">
                     WhatsApp us
                   </a>
@@ -182,7 +181,7 @@ export function Contact() {
               )}
 
               <p className="text-center text-[11px] text-neutral-600">
-                MVP form opens mailto. For fastest reply use WhatsApp or call.
+                Form opens WhatsApp with your enquiry. For fastest reply use WhatsApp or call.
               </p>
             </form>
           </div>
