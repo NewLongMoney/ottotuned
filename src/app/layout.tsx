@@ -18,20 +18,22 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ottotuned.local"),
   title: "Otto Tuned | Making Your Dreams a Reality",
   description:
-    "Vehicle Pro-Tuner for all makes. Multiple racing champion Lëroy Otto — Euro tuning, diesel, stock block, full calibration & track prep. Partnered with Mamba Turbo.",
+    "Kenya’s vehicle pro-tuner for all makes. Tarmac racing champion Lëroy Otto — Euro tuning, diesel, stock block, full calibration & track prep. Mamba Turbo partner. Call +254 782 217 212.",
   keywords: [
     "Otto Tuned",
     "Lëroy Otto",
-    "vehicle tuner",
+    "Leroy Otto",
+    "vehicle tuner Kenya",
+    "car tuning Nairobi",
     "Euro tuning",
-    "diesel tuning",
+    "diesel tuning Kenya",
     "ECU calibration",
-    "South Africa",
+    "Kenya motorsport",
   ],
   openGraph: {
     title: "Otto Tuned | Making Your Dreams a Reality",
     description:
-      "Racing-champion tuning for all makes. Book a consultation with Lëroy Otto.",
+      "Kenya racing-champion tuning for all makes. Book a consultation with Lëroy Otto — +254 782 217 212.",
     type: "website",
     images: [
       {
