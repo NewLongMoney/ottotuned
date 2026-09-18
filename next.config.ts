@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  outputFileTracingIncludes: {
+    "/media/[...path]": ["./src/data/media-b64/**/*"],
+  },
   // Local JPGs in /public stay on the default Image Optimization pipeline.
   images: {
     formats: ["image/avif", "image/webp"],
