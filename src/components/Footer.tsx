@@ -9,8 +9,9 @@ export function Footer() {
           <OttoLogo className="h-8 text-white" />
           <p className="mt-4 max-w-xs text-sm text-neutral-500">{BRAND.tagline}</p>
           <p className="mt-2 text-sm text-neutral-600">
-            {BRAND.founder} · Vehicle Pro-Tuner (All Makes)
+            {BRAND.founder} · Vehicle Pro-Tuner (All Makes) · {BRAND.location}
           </p>
+          <p className="mt-1 text-sm text-neutral-600">{BRAND.phoneDisplay}</p>
         </div>
 
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-3">

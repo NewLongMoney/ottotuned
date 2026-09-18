@@ -1,7 +1,7 @@
 import { BRAND } from "@/lib/constants";
 
 const ITEMS = [
-  { label: "Racing champion", detail: "Multiple titles" },
+  { label: "Kenya tarmac champ", detail: "4WD titles · Excellence awards" },
   { label: "All makes", detail: "Euro · Diesel · JDM" },
   { label: "Mamba Turbo", detail: "Official partner" },
   { label: "Ottomotive Sim", detail: "Simulator program" },
@@ -28,7 +28,7 @@ export function ProofStrip() {
       </div>
       <div className="border-t border-white/10 px-5 py-4 text-center sm:px-8">
         <p className="text-xs text-neutral-500">
-          Champion-bred calibration by{" "}
+          Champion-bred calibration in Kenya by{" "}
           <span className="text-neutral-300">{BRAND.founder}</span>
           {" · "}
           Partnered with Mamba Turbo — no invented OEM sponsorships
