@@ -18,14 +18,17 @@ export function About() {
             >
               {BRAND.founder}
             </h2>
-            <p className="mt-2 text-lg text-neutral-500">Vehicle Pro-Tuner · Racing champion</p>
+            <p className="mt-2 text-lg text-neutral-500">
+              Vehicle Pro-Tuner · Kenya tarmac champion · {BRAND.location}
+            </p>
 
             <div className="mt-8 space-y-5 text-base leading-relaxed text-neutral-300">
               <p>
                 Otto Tuned is built around one conviction: the map should feel like the car always
-                wanted to drive that way. {BRAND.founder} brings multiple racing championships into
-                every calibration — whether the brief is a Euro SUV that still needs to behave on
-                the freeway, a diesel that hauls clean, or an Evo that has to win on Sunday.
+                wanted to drive that way. Based in {BRAND.location}, {BRAND.founder} brings
+                championship tarmac craft — including 4WD tarmac titles and Kenya Motorsport Excellence
+                recognition — into every calibration. Euro SUV that still behaves on the highway,
+                diesel that hauls clean on Kenyan roads, or an Evo that has to win on Sunday.
               </p>
               <p>
                 All makes. No theatre. Partnered with{" "}
@@ -61,7 +64,7 @@ export function About() {
             {[
               {
                 title: "Championship DNA",
-                body: "Race weekends sharpen judgment. That same discipline lands in street and track calibrations.",
+                body: "Kenya tarmac championships sharpen judgment. That same discipline lands in street and track calibrations.",
               },
               {
                 title: "All-makes remit",
