@@ -1,13 +1,14 @@
-import { INSTAGRAM_REFERENCE_JPEG_BASE64 } from "@/lib/instagramReferenceBase64";
-
 export const runtime = "nodejs";
 
+/** Mood placeholder until full brand JPG is published to public/brand/ */
+const JPEG_BASE64 = "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCABAAEADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDzPXf+P1P+uY/maza0td/4/U/65j+ZrNrCh/DR6mZ/75U9QooorU4AooooAKKKKANLXf+P1P+uY/maza0td/4/U/65j+ZrNrKh/DR35n/vlT1CiiitTgCiiigAooooA0td/wCP1P8ArmP5ms2tLXf+P1P+uY/mazayofw0d+Z/75U9QooorU4AooooAKKKKAP/2Q==";
+
 export function GET() {
-  const buf = Buffer.from(INSTAGRAM_REFERENCE_JPEG_BASE64, "base64");
+  const buf = Buffer.from(JPEG_BASE64, "base64");
   return new Response(buf, {
     headers: {
       "Content-Type": "image/jpeg",
-      "Cache-Control": "public, max-age=86400, immutable",
+      "Cache-Control": "public, max-age=3600",
     },
   });
 }
